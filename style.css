@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    padding: 30px;
+    background-color: #38d2d26b;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+  color: #fff;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.sidebar{
+    width: 35%;
+    height: 100vh;
+    padding: 30px;
+    background-color: antiquewhite;
+    border-top-left-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.hideContainer{
+    opacity: 0.8;
+}
+
+.showSide {
+    animation-name: showSide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.hideSide {
+    animation-name: showSide;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+}
+
+@keyframes showSide {
+    0% { 
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
